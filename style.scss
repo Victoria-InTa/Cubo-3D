@@ -1,0 +1,57 @@
+p{
+    font-size: 2rem;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(38deg) rotateX(-38deg);
+    transition: 1s ease-in;
+    margin: 10em auto;
+    animation: 4s cubo infinite;
+}
+.cubo div{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    
+}
+.cubo:hover{
+   @keyframes cubo{
+     0%{
+        transform: rotateY(-180deg) rotateX(180deg);
+     }
+   } 
+    
+}
+.cubo div:nth-child(1){
+    transform: translateZ(100px);
+    background-color: rgba(255, 105, 180, 0.562);
+}
+.cubo div:nth-child(2){
+    transform:  rotateX(-90deg) translateZ(100px);
+    background-color: rgba(143, 8, 76, 0.795);
+}
+.cubo div:nth-child(3){
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: rgba(252, 48, 150, 0.562);
+}
+.cubo div:nth-child(4){
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgb(48, 143, 252);
+}
+.cubo div:nth-child(5){
+    transform: rotateY(-270deg) translateZ(100px) ;
+    background-color: rgba(7, 30, 165, 0.788);
+}
+.cubo div:nth-child(6){
+    transform: translateZ(-100px) ;
+    background-color: rgba(145, 7, 25, 0.541);
+
+}
